@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria Delicia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgb(240, 240, 240);
+    }
+
+    header{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(139, 16, 16);
+      height: 8vh;
+      line-height: 8vh;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      justify-content: space-between;
+    }
+    
+    footer{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(139, 16, 16);
+      height: 8vh;
+      line-height: 8vh;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .title{
+      color: white;
+    }
+    .page-container{
+      height: 80vh;
+      width: 90vw;
+    }
+    .pizza-card{
+      height: 50vh;
+      width: 24vw;
+      background-color: white;
+      border-radius: 0.5em;
+    }
+    img{
+      width: 24vw;
+      height: 29vh;
+      border-radius: 0.5em;
+    }
+    .pizzas-container{
+      margin-left: 11px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      height: 75vh;
+      /* width: 90vw; */
+    }
+    .preco{
+      background-color: rgb(145, 252, 145);
+      border: 1px solid rgb(15, 109, 15);
+      padding: 3px;
+      border-radius: 0.3em;
+      margin-left: 2px;
+    }
+    .add-to{
+      background-color: rgb(255, 6, 6);
+      border: 1px solid rgb(139, 16, 16);
+      padding: 3px;
+      border-radius: 0.3em;
+      margin-left: 2px;
+      color: white;
+    }
+    .cardapio{
+      margin-left: 11px;
+      margin-top: 5vh;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h4 class="title">
+      <i class="fas fa-pizza-slice"></i>
+      Pizzaria Delícia</h4>
+      <i class="fas fa-shopping-bag" style="color: white;"></i>
+  </header>
+    <h4 class="cardapio">Cardápio</h4>
+    <div class="pizzas-container">
+      <div class="pizza-card">
+        <img src="margherita-1024x682.jpg">
+        <h3>Pizza Margherita</h3>
+        <p>Tomate, muçarela, manjericão fresco</p>
+        <button class="preco">R$50,00</button>
+        <button class="add-to"><i class="fas fa-shopping-bag"></i>
+        Adicionar à sacola</button>
+      </div>
+      <div class="pizza-card">
+        <img src="pizza-vegetariana-1.jpeg">
+        <h3>Pizza Vegetariana</h3>
+        <p>Tomate, muçarela, vegetais frescos</p>
+        <button class="preco">R$50,00</button>
+        <button class="add-to"><i class="fas fa-shopping-bag"></i>
+        Adicionar à sacola</button>
+      </div>
+      <div class="pizza-card">
+        <img src="Falsa-pizza-de-calabresa-e-mussarela.jpg">
+        <h3>Pizza Calabresa</h3>
+        <p>Tomate, muçarela, calabresa</p>
+        <button class="preco">R$50,00</button>
+        <button class="add-to"><i class="fas fa-shopping-bag"></i>
+        Adicionar à sacola</button>
+      </div>
+      <div class="pizza-card">
+        <img src="pizza_calabresa_e_mussarela_4389_600_square.jpg">
+        <h3>Pizza Pepperoni</h3>
+        <p>Tomate, muçarela, pepperoni</p>
+        <button class="preco">R$50,00</button>
+        <button class="add-to"><i class="fas fa-shopping-bag"></i>
+        Adicionar à sacola</button>
+      </div>
+    </div>
+
+    <footer>
+      <p style="color: white;">&copy; 2024 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
